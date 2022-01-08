@@ -12,6 +12,10 @@ export class CreateUsuarioDto {
 
     @IsNotEmpty()
     @IsString()
+    senha: string;
+
+    @IsNotEmpty()
+    @IsString()
     imagem: string;
 
     @IsNotEmpty()
@@ -24,11 +28,11 @@ export class CreateUsuarioDto {
 
     @IsNotEmpty()
     @IsInt()
-    idSeguidor: number;
+    seguidorid: number;
 
     @IsNotEmpty()
     @IsInt()
-    idSeguindo: number;
+    seguindoid: number;
 
     @IsNotEmpty()
     @IsString()
@@ -41,4 +45,8 @@ export class CreateUsuarioDto {
     @IsNotEmpty()
     @IsInt()
     tweetid: number;
+
+    @IsNotEmpty()
+    @IsInt()
+    favoritesid: number;
 }

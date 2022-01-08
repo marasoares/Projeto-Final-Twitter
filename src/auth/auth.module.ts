@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { UsuariosService } from 'src/usuarios/usuarios.service';
+import { UsuarioService } from 'src/usuario/usuario.service';
 import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './jwt.strategy';
@@ -23,7 +23,7 @@ import { AuthController } from './auth.controller';
             },
         }),
     ],
-    providers: [UsuariosService, PrismaService, AuthService, JwtStrategy],
+    providers: [UsuarioService, PrismaService, AuthService, JwtStrategy],
     controllers: [AuthController],
     exports: [PassportModule, JwtModule],
 })
