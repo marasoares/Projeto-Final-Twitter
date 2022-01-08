@@ -127,6 +127,6 @@ Para rodar o projeto utilize o comando: `npm run start:dev`
 
 
 
-Projeto elaborado pelos alunos: Mara Paula Soares e Flávio Teston
+Projeto elaborado pela  aluna: Mara Soares
+BlueEdtch
 
-BlueEdtech
